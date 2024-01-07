@@ -1,0 +1,26 @@
+header {
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    margin: 50px 140px 120px;
+}
+
+.banner {
+    text-align: center;
+    padding: 230px 344px 175px;
+}
+
+.banner .banner-greeting {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner .banner-title {
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+}
