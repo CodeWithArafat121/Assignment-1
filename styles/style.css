@@ -1,25 +1,26 @@
-header {
-    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Banner\ Image.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#header {
+    margin: 50px 0;
+}
+
+.header-banner {
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/BannerImage.png');
+    padding: 163px 0;
     border-radius: 16px;
-    margin: 50px 140px;
-    padding: 230px 344px 175px;
 }
 
-.banner {
+.section-heading {
+    width: 550px;
     text-align: center;
-
+    margin: 20px auto;
 }
 
-.banner .banner-greeting {
+.section-heading>h3 {
     color: #FFF;
     font-size: 32px;
     font-weight: 400;
 }
 
-.banner .banner-title {
+.section-heading>h1 {
     color: #FFF;
     font-size: 72px;
     font-weight: 900;
@@ -27,55 +28,54 @@ header {
 }
 
 #holiday-deals {
-    width: 50%;
-    max-width: 800px;
-    text-align: center;
-    margin: 120px auto;
+    margin-top: 70px;
 }
 
-#holiday-deals .deal-percentage {
+.deals-heading {
+    width: 50%;
+    max-width: 800px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.deals-heading>.deals-percentage {
     font-size: 88px;
     font-weight: 700;
     margin-bottom: 48px;
 }
 
-#holiday-deals .section-title {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-#holiday-deals .section-img {
+.deals-heading>img {
     margin-top: 48px;
 }
 
 #invitation-card {
+    margin: 120px 0;
+}
+
+.card-info {
     background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Vectorrr.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 140px;
+    padding: 65px 0;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 126px 145px 174px 126px;
 }
 
-#invitation-card .card-content {
-    width: 640px;
+.card-info>.card-heading {
+    width: 700px;
+    text-align: left;
+    margin: 20px auto;
 }
 
-#invitation-card>.card-content>h1 {
+.card-info>.card-heading>h1 {
     color: #FFF;
     font-size: 64px;
     font-weight: 900;
     line-height: 88px;
-    letter-spacing: 7.04px;
     margin-bottom: 24px;
 }
 
-#invitation-card>.card-content>p {
+.card-info>.card-heading>p {
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
     font-weight: 400;
@@ -83,24 +83,34 @@ header {
     margin-bottom: 48px;
 }
 
-#invitation-card>.card-content>button {
+.card-info>.card-heading>button {
     color: #FFF;
-    text-align: center;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     background: transparent;
     border: none;
+    padding-left: 30px;
 }
 
-#address-info {
+.card-info>.card-img img {
+    padding-right: 156px;
+}
+
+#address>.address-info {
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
-    margin: 120px 140px;
-    padding: 100px 385px;
-    text-align: center;
+    padding: 126px 0;
+    border: 2px solid red;
 }
 
-#address-info h3 {
+.address-info>.address-heading {
+    width: 550px;
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+.address-info>.address-heading>h3 {
     font-family: Inter;
     font-size: 32px;
     font-weight: 600;
@@ -108,14 +118,183 @@ header {
     text-transform: capitalize;
 }
 
-#address-info .address-btn {
+.address-info>.address-heading>.address-btn {
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 48px;
-    border-radius: 8px;
     background: #F00;
+    margin-top: 48px;
     padding: 16px 32px;
+    border-radius: 8px;
     border: 0;
+    text-align: center;
+}
+
+#best-offer{
+    margin: 120px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content>.offer-heading *{
+    width: 393px;
+    margin: 20px auto;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.section-content>.offer-heading> *{
+   
+}
+
+.section-content>.offer-img {
+    width: 364px;
+    border-radius: 250px;
+    border: 15px solid #F00;
+    padding: 22px;
+    margin: 0 auto;
+}
+
+.section-details>p {
+    width: 276px;
+    margin-bottom: 35px;
+}
+
+#holiday-sale>.sale-heading {
+    text-align: center;
+    width: 885px;
+    margin: 120px auto;
+}
+
+.sale-heading>.sale-greeting {
+    color: #070211;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.sale-heading>.sale-title {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.sale-heading>.sale-description {
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+#holiday-sale>.section-content {
+    width: 80%;
+    max-width: 1320px;
+    background: url('../resources/Rectangle\ 1.png'), url('../resources/Rectangle\ 2.png');
+    background-repeat: no-repeat;
+    background-position: top right, bottom;
+    background-size: 26.3%, 100%;
+    margin: 100px auto;
+    padding-right: 200px;
+    text-align: center;
+    border-radius: 16px 0px 16px 16px;
+}
+
+.section-content>.sale-img {
+    margin-bottom: 250px;
+    margin-left: 70px;
+}
+
+#our-portfolio>.portfolio-heading {
+    margin: 120px 140px;
+}
+
+#our-portfolio>.portfolio-img {
+    display: flex;
+    gap: 24px;
+    margin: 120px 140px;
+    justify-content: left;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+#our-portfolio>.portfolio-img2 {
+    display: flex;
+    gap: 24px;
+    margin: 120px 140px;
+    justify-content: left;
+}
+
+#our-portfolio>.portfolio-img>img {
+    width: 424px;
+    height: 450px;
+    border-radius: 16px;
+}
+
+#news-latter>.news-latter-info {
+    width: 80%;
+    max-width: 1320px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    margin: 120px auto;
+    text-align: center;
+    padding: 120px 0px;
+}
+
+#news-latter>.news-latter-info p {
+    width: 896px;
+    text-align: center;
+    padding: 0px 212px;
+}
+
+#news-latter>.news-latter-info>form {
+    max-width: 648px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10;
+}
+
+#news-latter>.news-latter-info>form input {
+    flex-grow: 1;
+    border-radius: 50px;
+    background: #FFF;
+    border: 0;
+    color: rgba(7, 2, 17, 0.30);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#news-latter>.news-latter-info>form button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 210px;
+    height: 72px;
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    border: 0;
+}
+
+#footer {
+    background-color: #070211;
+    ;
+    display: flex;
+    justify-content: space-around;
+    padding: 120px 140px;
+}
+
+#footer>.footer-address {
+    width: 375px;
+}
+
+#footer>.footer-contract {
+    display: inline-block;
+
 }
