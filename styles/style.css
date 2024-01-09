@@ -100,7 +100,7 @@
 #address>.address-info {
     background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
     padding: 126px 0;
-    border: 2px solid red;
+    border-radius: 16px;
 }
 
 .address-info>.address-heading {
@@ -228,39 +228,44 @@
     border: 10px solid lightgray;
 }
 
-#news-latter>.news-latter-info {
-    width: 80%;
-    max-width: 1320px;
-    border-radius: 16px;
-    background: rgba(255, 0, 0, 0.05);
-    margin: 120px auto;
-    text-align: center;
-    padding: 120px 0px;
+#news-latter{
+    margin: 120px 0;
 }
 
-#news-latter>.news-latter-info p {
+#news-latter>.news-latter-info {
+    background: rgba(255, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 80px 0;
+}
+
+.news-latter-info>.news-latter-heading{
     width: 896px;
     text-align: center;
-    padding: 0px 212px;
+    margin: 20px auto;
 }
 
-#news-latter>.news-latter-info>form {
+.news-latter-info>.news-latter-heading>h1{
+    margin: 40px 0;
+}
+
+.news-latter-info>form {
     max-width: 648px;
     margin: 20px auto;
     display: flex;
     gap: 10;
+    margin-top: 48px;
 }
 
-#news-latter>.news-latter-info>form input {
+.news-latter-info>form input {
     flex-grow: 1;
-    border-radius: 50px;
+    border-radius: 50px 0px 0px 50px;
     background: #FFF;
     border: 0;
     color: rgba(7, 2, 17, 0.30);
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
-    padding: 20px;
+    padding: 25px 30px;
 }
 
 #news-latter>.news-latter-info>form button {
